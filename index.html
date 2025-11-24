@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Restaurante El Sabor</title>
+</head>
+<body>
+    
+    <header>
+        <!-- Logo y nombre del restaurante -->
+        <img src="https://scontent.feoh6-1.fna.fbcdn.net/v/t39.30808-6/299584633_740210143734387_1572407545082485377_n.png?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGnr6FV2PrOvp9bjBgAenACJULjf09qedwlQuN_T2p53O1ADD3fKRvzXRAPOoQWPNM7yPD_hXSGe8GnalXGbE32&_nc_ohc=oFkbAvZ0BHYQ7kNvwHicEWp&_nc_oc=Adkb9QpOFabx5t1Mgybj-ZieHCtj2wUfgH8bu1rZALgJMb1B_e4n5baBMw2lFykV5o-9j8Tecs0FMuocDDO1060H&_nc_zt=23&_nc_ht=scontent.feoh6-1.fna&_nc_gid=gCG3q2hDy7H-M_nTxHLcAA&oh=00_Afg-wslorDijaukt3yD7cqkPdnUXrdf8SyCIewmFNUE5xw&oe=69298D8A" 
+             alt="Logo del Restaurante El Sabor" width="300">
+        <h1>Restaurante El Sabor</h1>
+    </header>
+    
+    <nav>
+        <!-- Navegación a las 4 páginas -->
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio">
+            <h2>Bienvenidos a Restaurante El Sabor</h2>
+            <p>Disfruta de la mejor comida casera con un ambiente acogedor y familiar.</p>
+            
+            <!-- Video de bienvenida local -->
+            <video controls preload="metadata" poster="media/poster-bienvenida.jpg" width="720">
+                <source src="media/bienvenida.mp4" type="video/mp4">
+                <source src="media/bienvenida.webm" type="video/webm">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </section>
+        
+        <!-- Sección Menú -->
+        <section id="menu">
+            <h2>Menú de comidas</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Plato</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bandeja Paisa</td>
+                        <td>Plato típico con frijoles, arroz, carne, huevo y chicharrón</td>
+                        <td>$25.000</td>
+                    </tr>
+                    <tr>
+                        <td>Sancocho</td>
+                        <td>Sopa tradicional con pollo, yuca, plátano y mazorca</td>
+                        <td>$18.000</td>
+                    </tr>
+                    <tr>
+                        <td>Arepas rellenas</td>
+                        <td>Arepas con queso, carne o pollo</td>
+                        <td>$10.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Sección Galería -->
+        <section id="galeria">
+            <h2>Galería de fotos</h2>
+            
+            <figure>
+                <img src="https://www.cocina-colombiana.com/base/stock/Recipe/bandeja-paisa/bandeja-paisa_web.jpg.webp" 
+                     alt="Plato típico servido en el restaurante" width="300">
+                <figcaption>Bandeja Paisa</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="https://estaticos.elcolombiano.com/binrepository/836x565/28c0/780d565/none/11101/UYHL/colp-314692_48141535_20250620070155.jpg" 
+                     alt="Interior del restaurante con mesas y decoración" width="300">
+                <figcaption>Ambiente acogedor</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="https://m.media-amazon.com/images/I/71MNpY1g6JL._AC_SL1500_.jpg" 
+                     alt="Postre casero servido en el restaurante" width="300">
+                <figcaption>Postre casero</figcaption>
+            </figure>
+            
+            <!-- Video de cocina en acción -->
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/eVVfsLg--aA"
+                title="Video de cocina en acción"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </section>
+        
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Copyright, dirección, teléfono -->
+        <p>&copy; 2025 Restaurante El Sabor</p>
+        <p>Dirección: Calle Principal #123, Medellín</p>
+        <p>Teléfono: +57 300 123 4567</p>
+    </footer>
+    
+</body>
+</html>
